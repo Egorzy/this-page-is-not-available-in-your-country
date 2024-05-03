@@ -1,0 +1,2326 @@
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes floatY {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatY {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.card-box-img {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+
+.card-box-img__1,
+.card-box-img__2,
+.card-box-img__3,
+.card-box-img__4,
+.card-box-img__5,
+.card-box-img__6,
+.card-box-img__7,
+.card-box-img__8,
+.card-box-img__9 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.3s;
+}
+
+.card-box-img_children .card-box-img__3 {
+  display: none;
+}
+
+.card-box-img_health .card-box-img__4 {
+  display: none;
+}
+
+.card-box:hover .card-box-img_invention .card-box-img__1,
+.card-box.hover .card-box-img_invention .card-box-img__1 {
+  -webkit-animation: rotate infinite 15s linear;
+  animation: rotate infinite 15s linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_invention .card-box-img__2,
+.card-box.hover .card-box-img_invention .card-box-img__2 {
+  -webkit-animation: floatY infinite 15s linear;
+  animation: floatY infinite 15s linear;
+  /* animation: floatY infinite 15s cubic-bezier(0.68, -0.55, 0.27, 1.55); */
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_invention .card-box-img__3,
+.card-box.hover .card-box-img_invention .card-box-img__3 {
+  -webkit-animation: scale infinite 15s linear;
+  animation: scale infinite 15s linear;
+  /* animation: scale infinite 15s cubic-bezier(0.68, -0.55, 0.27, 1.55); */
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes chat {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+
+@keyframes chat {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes hand {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(5px, 5px);
+    transform: translate(5px, 5px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes hand {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(5px, 5px);
+    transform: translate(5px, 5px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes head {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 5px);
+    transform: translate(0, 5px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes head {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 5px);
+    transform: translate(0, 5px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+.card-box:hover .card-box-img_storytelling .card-box-img__4,
+.card-box:hover .card-box-img_storytelling .card-box-img__1,
+.card-box.hover .card-box-img_storytelling .card-box-img__4,
+.card-box.hover .card-box-img_storytelling .card-box-img__1 {
+  -webkit-animation: chat infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: chat infinite cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_storytelling .card-box-img__1,
+.card-box.hover .card-box-img_storytelling .card-box-img__1 {
+  -webkit-animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.card-box:hover .card-box-img_storytelling .card-box-img__3,
+.card-box.hover .card-box-img_storytelling .card-box-img__3 {
+  -webkit-animation: hand infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: hand infinite cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_storytelling .card-box-img__2,
+.card-box.hover .card-box-img_storytelling .card-box-img__2 {
+  -webkit-animation: head infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: head infinite cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_speedreading .card-box-img__1,
+.card-box.hover .card-box-img_speedreading .card-box-img__1 {
+  -webkit-animation: scale infinite ease-in-out;
+  animation: scale infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_speedreading .card-box-img__2,
+.card-box.hover .card-box-img_speedreading .card-box-img__2 {
+  -webkit-animation: rotate infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: rotate infinite cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_speedreading .card-box-img__3,
+.card-box.hover .card-box-img_speedreading .card-box-img__3 {
+  -webkit-animation: floatY infinite ease-in-out;
+  animation: floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes mnemonicsFloat {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes mnemonicsFloat {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes mnemonicsShow {
+  0%,
+  20% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes mnemonicsShow {
+  0%,
+  20% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.card-box:hover .card-box-img_mnemonics .card-box-img__7,
+.card-box.hover .card-box-img_mnemonics .card-box-img__7 {
+  -webkit-animation: mnemonicsFloat infinite ease;
+  animation: mnemonicsFloat infinite ease;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_mnemonics .card-box-img__2,
+.card-box.hover .card-box-img_mnemonics .card-box-img__2 {
+  -webkit-animation: mnemonicsShow infinite ease;
+  animation: mnemonicsShow infinite ease;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_mnemonics .card-box-img__1,
+.card-box.hover .card-box-img_mnemonics .card-box-img__1 {
+  -webkit-animation: scale infinite ease;
+  animation: scale infinite ease;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes relationship-building-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes relationship-building-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.card-box:hover .card-box-img_relationship-building .card-box-img__1,
+.card-box.hover .card-box-img_relationship-building .card-box-img__1 {
+  -webkit-animation: relationship-building-rotate infinite linear;
+  animation: relationship-building-rotate infinite linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: 50% 58%;
+  transform-origin: 50% 58%;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_relationship-building .card-box-img__2,
+.card-box.hover .card-box-img_relationship-building .card-box-img__2 {
+  -webkit-animation: floatY infinite ease-in-out;
+  animation: floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes psychoregulation-right {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 0;
+  }
+  11% {
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  50%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes psychoregulation-right {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 0;
+  }
+  11% {
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  50%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes psychoregulation-left {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 0;
+  }
+  11% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  50%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes psychoregulation-left {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 0;
+  }
+  11% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  50%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.card-box:hover .card-box-img_psychoregulation .card-box-img__1,
+.card-box.hover .card-box-img_psychoregulation .card-box-img__1 {
+  -webkit-animation: floatY infinite ease-in-out;
+  animation: floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_psychoregulation .card-box-img__2,
+.card-box.hover .card-box-img_psychoregulation .card-box-img__2 {
+  -webkit-animation: psychoregulation-right infinite ease-in-out;
+  animation: psychoregulation-right infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_psychoregulation .card-box-img__3,
+.card-box.hover .card-box-img_psychoregulation .card-box-img__3 {
+  -webkit-animation: psychoregulation-left infinite ease-in-out;
+  animation: psychoregulation-left infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_self-psychologist .card-box-img__1,
+.card-box.hover .card-box-img_self-psychologist .card-box-img__1 {
+  -webkit-animation: floatY infinite ease-in-out;
+  animation: floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_self-psychologist .card-box-img__2,
+.card-box.hover .card-box-img_self-psychologist .card-box-img__2 {
+  -webkit-animation: psychoregulation-right infinite ease-in-out;
+  animation: psychoregulation-right infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes russian-language-rotate {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    -webkit-transform: rotate(180deg) scale(1.2);
+    transform: rotate(180deg) scale(1.2);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes russian-language-rotate {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    -webkit-transform: rotate(180deg) scale(1.2);
+    transform: rotate(180deg) scale(1.2);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.card-box:hover .card-box-img_russian-language .card-box-img__1,
+.card-box.hover .card-box-img_russian-language .card-box-img__1 {
+  -webkit-animation: russian-language-rotate infinite linear;
+  animation: russian-language-rotate infinite linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_russian-language .card-box-img__2,
+.card-box.hover .card-box-img_russian-language .card-box-img__2 {
+  -webkit-animation: floatY infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: floatY infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: 40% 50%;
+  transform-origin: 40% 50%;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes profiling-floatY {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  40% {
+    -webkit-transform: translate(10px, -15px);
+    transform: translate(10px, -15px);
+  }
+  70% {
+    -webkit-transform: translate(0, -10px);
+    transform: translate(0, -10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes profiling-floatY {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  40% {
+    -webkit-transform: translate(10px, -15px);
+    transform: translate(10px, -15px);
+  }
+  70% {
+    -webkit-transform: translate(0, -10px);
+    transform: translate(0, -10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+.card-box:hover .card-box-img_profiling .card-box-img__2,
+.card-box:hover .card-box-img_profiling .card-box-img__3,
+.card-box.hover .card-box-img_profiling .card-box-img__2,
+.card-box.hover .card-box-img_profiling .card-box-img__3 {
+  -webkit-animation: profiling-floatY infinite
+    cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: profiling-floatY infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: 40% 50%;
+  transform-origin: 40% 50%;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes profiling-data {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  5% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  6%,
+  70% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  75%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes profiling-data {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  5% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  6%,
+  70% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  75%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.card-box:hover .card-box-img_profiling .card-box-img__4,
+.card-box.hover .card-box-img_profiling .card-box-img__4 {
+  -webkit-animation: profiling-data infinite linear;
+  animation: profiling-data infinite linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes time-management-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50%,
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes time-management-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50%,
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.card-box:hover .card-box-img_time-management .card-box-img__1,
+.card-box.hover .card-box-img_time-management .card-box-img__1 {
+  -webkit-animation: time-management-rotate infinite ease-in-out;
+  animation: time-management-rotate infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_time-management .card-box-img__2,
+.card-box.hover .card-box-img_time-management .card-box-img__2 {
+  -webkit-animation: time-management-rotate infinite ease-in-out;
+  animation: time-management-rotate infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_time-management .card-box-img__4,
+.card-box.hover .card-box-img_time-management .card-box-img__4 {
+  -webkit-animation: floatY infinite ease-in-out;
+  animation: floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes continuing-education-floatY {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes continuing-education-floatY {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.card-box:hover .card-box-img_continuing-education .card-box-img__2,
+.card-box.hover .card-box-img_continuing-education .card-box-img__2 {
+  -webkit-animation: continuing-education-floatY infinite ease-in-out;
+  animation: continuing-education-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_continuing-education .card-box-img__3,
+.card-box.hover .card-box-img_continuing-education .card-box-img__3 {
+  -webkit-animation: scale infinite ease-in-out;
+  animation: scale infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_continuing-education .card-box-img__4,
+.card-box.hover .card-box-img_continuing-education .card-box-img__4 {
+  -webkit-animation: time-management-rotate infinite ease-in-out;
+  animation: time-management-rotate infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes self-knowledge-floatY {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes self-knowledge-floatY {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes self-knowledge-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  40%,
+  60% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  90%,
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes self-knowledge-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  40%,
+  60% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  90%,
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes self-knowledge-4 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  40%,
+  60% {
+    -webkit-transform: translate(40%, 5px);
+    transform: translate(40%, 5px);
+  }
+  90%,
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes self-knowledge-4 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  40%,
+  60% {
+    -webkit-transform: translate(40%, 5px);
+    transform: translate(40%, 5px);
+  }
+  90%,
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes self-knowledge-5 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  40%,
+  60% {
+    -webkit-transform: translate(-40%, -5px);
+    transform: translate(-40%, -5px);
+  }
+  90%,
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes self-knowledge-5 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  40%,
+  60% {
+    -webkit-transform: translate(-40%, -5px);
+    transform: translate(-40%, -5px);
+  }
+  90%,
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.card-box:hover .card-box-img_self-knowledge .card-box-img__1,
+.card-box.hover .card-box-img_self-knowledge .card-box-img__1 {
+  -webkit-animation: self-knowledge-rotate infinite ease-in-out;
+  animation: self-knowledge-rotate infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_self-knowledge .card-box-img__2,
+.card-box.hover .card-box-img_self-knowledge .card-box-img__2 {
+  -webkit-animation: self-knowledge-rotate infinite
+    cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation: self-knowledge-rotate infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_self-knowledge .card-box-img__4,
+.card-box.hover .card-box-img_self-knowledge .card-box-img__4 {
+  -webkit-animation: self-knowledge-floatY infinite ease-in-out;
+  animation: self-knowledge-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_self-knowledge .card-box-img__5,
+.card-box.hover .card-box-img_self-knowledge .card-box-img__5 {
+  -webkit-animation: self-knowledge-floatY infinite ease-in-out;
+  animation: self-knowledge-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes modern-rhetoric-chat {
+  0% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  30%,
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+@keyframes modern-rhetoric-chat {
+  0% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  30%,
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+.card-box:hover .card-box-img_modern-rhetoric .card-box-img__1,
+.card-box.hover .card-box-img_modern-rhetoric .card-box-img__1 {
+  -webkit-animation: self-knowledge-floatY infinite linear;
+  animation: self-knowledge-floatY infinite linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_modern-rhetoric .card-box-img__3,
+.card-box:hover .card-box-img_modern-rhetoric .card-box-img__4,
+.card-box.hover .card-box-img_modern-rhetoric .card-box-img__3,
+.card-box.hover .card-box-img_modern-rhetoric .card-box-img__4 {
+  -webkit-animation: modern-rhetoric-chat infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: modern-rhetoric-chat infinite cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_cognitive-science .card-box-img__1,
+.card-box.hover .card-box-img_cognitive-science .card-box-img__1 {
+  -webkit-animation: scale infinite ease-in-out;
+  animation: scale infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_cognitive-science .card-box-img__3,
+.card-box:hover .card-box-img_cognitive-science .card-box-img__4,
+.card-box.hover .card-box-img_cognitive-science .card-box-img__3,
+.card-box.hover .card-box-img_cognitive-science .card-box-img__4 {
+  -webkit-animation: self-knowledge-floatY infinite ease-in-out;
+  animation: self-knowledge-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_cognitive-science .card-box-img__5,
+.card-box.hover .card-box-img_cognitive-science .card-box-img__5 {
+  -webkit-animation: floatY infinite ease-in-out;
+  animation: floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes communication-techniques {
+  0% {
+    opacity: 1;
+  }
+  10%,
+  30% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+    opacity: 0;
+  }
+  31% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  45%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes communication-techniques {
+  0% {
+    opacity: 1;
+  }
+  10%,
+  30% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+    opacity: 0;
+  }
+  31% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  45%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.card-box:hover .card-box-img_communication-techniques .card-box-img__1,
+.card-box.hover .card-box-img_communication-techniques .card-box-img__1 {
+  -webkit-animation: floatY infinite ease-in-out;
+  animation: floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_communication-techniques .card-box-img__2,
+.card-box.hover .card-box-img_communication-techniques .card-box-img__2 {
+  -webkit-animation: self-knowledge-floatY infinite ease-in-out;
+  animation: self-knowledge-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_communication-techniques .card-box-img__3,
+.card-box.hover .card-box-img_communication-techniques .card-box-img__3 {
+  -webkit-animation: communication-techniques infinite ease-in-out;
+  animation: communication-techniques infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_language-learning-techniques .card-box-img__1,
+.card-box.hover .card-box-img_language-learning-techniques .card-box-img__1 {
+  -webkit-animation: russian-language-rotate infinite linear;
+  animation: russian-language-rotate infinite linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_language-learning-techniques .card-box-img__2,
+.card-box.hover .card-box-img_language-learning-techniques .card-box-img__2 {
+  -webkit-animation: floatY infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: floatY infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: 40% 50%;
+  transform-origin: 40% 50%;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_health .card-box-img__1,
+.card-box.hover .card-box-img_health .card-box-img__1 {
+  -webkit-animation: continuing-education-floatY infinite ease-in-out;
+  animation: continuing-education-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_health .card-box-img__3,
+.card-box.hover .card-box-img_health .card-box-img__3 {
+  display: none;
+}
+
+.card-box:hover .card-box-img_health .card-box-img__4,
+.card-box.hover .card-box-img_health .card-box-img__4 {
+  display: block;
+}
+
+.card-box:hover .card-box-img_children .card-box-img__1,
+.card-box.hover .card-box-img_children .card-box-img__1 {
+  -webkit-animation: floatY infinite ease-in-out;
+  animation: floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_children .card-box-img__2,
+.card-box.hover .card-box-img_children .card-box-img__2 {
+  display: none;
+}
+
+.card-box:hover .card-box-img_children .card-box-img__3,
+.card-box.hover .card-box-img_children .card-box-img__3 {
+  display: block;
+}
+
+.card-box:hover .card-box-img_business .card-box-img__2,
+.card-box.hover .card-box-img_business .card-box-img__2 {
+  -webkit-animation: time-management-rotate infinite ease-in-out;
+  animation: time-management-rotate infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_business .card-box-img__3,
+.card-box.hover .card-box-img_business .card-box-img__3 {
+  -webkit-animation: continuing-education-floatY infinite ease-in-out;
+  animation: continuing-education-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_neuroscience .card-box-img__1,
+.card-box.hover .card-box-img_neuroscience .card-box-img__1 {
+  -webkit-animation: scale infinite ease-in-out;
+  animation: scale infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_neuroscience .card-box-img__2,
+.card-box.hover .card-box-img_neuroscience .card-box-img__2 {
+  -webkit-animation: self-knowledge-floatY infinite ease-in-out;
+  animation: self-knowledge-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_goals .card-box-img__1,
+.card-box.hover .card-box-img_goals .card-box-img__1 {
+  -webkit-animation: continuing-education-floatY infinite ease-in-out;
+  animation: continuing-education-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_goals .card-box-img__3,
+.card-box.hover .card-box-img_goals .card-box-img__3 {
+  -webkit-animation: modern-rhetoric-chat infinite
+    cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  animation: modern-rhetoric-chat infinite cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3.2s;
+  animation-duration: 3.2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_critical-thinking .card-box-img__1,
+.card-box.hover .card-box-img_critical-thinking .card-box-img__1 {
+  -webkit-animation: continuing-education-floatY infinite ease-in-out;
+  animation: continuing-education-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_critical-thinking .card-box-img__3,
+.card-box.hover .card-box-img_critical-thinking .card-box-img__3 {
+  -webkit-animation: modern-rhetoric-chat infinite
+    cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  animation: modern-rhetoric-chat infinite cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3.2s;
+  animation-duration: 3.2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_critical-thinking .card-box-img__4,
+.card-box.hover .card-box-img_critical-thinking .card-box-img__4 {
+  -webkit-animation: modern-rhetoric-chat infinite
+    cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  animation: modern-rhetoric-chat infinite cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4.4s;
+  animation-duration: 4.4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_critical-thinking .card-box-img__2,
+.card-box.hover .card-box-img_critical-thinking .card-box-img__2 {
+  -webkit-animation: modern-rhetoric-chat infinite
+    cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  animation: modern-rhetoric-chat infinite cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2.4s;
+  animation-duration: 2.4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+/* === Ð Ñ’Ð Ð…Ð Ñ‘Ð Ñ˜Ð Â°Ð¡â€ Ð Ñ‘Ð¡Ð Ð Â·Ð Â°Ð Ñ—Ð¡Ñ“Ð¡ÐƒÐ Ñ”Ð Â° Ð Ñ•Ð Ò‘Ð Ñ‘Ð Ð… Ð¡Ð‚Ð Â°Ð Â· === */
+.card-box-img_start.card-box-img_neuroscience .card-box-img__1 {
+  -webkit-animation: scale infinite ease-in-out;
+  animation: scale infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_neuroscience .card-box-img__2 {
+  -webkit-animation: self-knowledge-floatY infinite ease-in-out;
+  animation: self-knowledge-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_critical-thinking .card-box-img__1 {
+  -webkit-animation: continuing-education-floatY infinite ease-in-out;
+  animation: continuing-education-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_critical-thinking .card-box-img__3 {
+  -webkit-animation: modern-rhetoric-chat infinite
+    cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  animation: modern-rhetoric-chat infinite cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3.2s;
+  animation-duration: 3.2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_critical-thinking .card-box-img__4 {
+  -webkit-animation: modern-rhetoric-chat infinite
+    cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  animation: modern-rhetoric-chat infinite cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4.4s;
+  animation-duration: 4.4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_critical-thinking .card-box-img__2 {
+  -webkit-animation: modern-rhetoric-chat infinite
+    cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  animation: modern-rhetoric-chat infinite cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2.4s;
+  animation-duration: 2.4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_storytelling .card-box-img__4,
+.card-box-img_start.card-box-img_storytelling .card-box-img__1 {
+  -webkit-animation: chat infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: chat infinite cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_storytelling .card-box-img__1 {
+  -webkit-animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.card-box-img_start.card-box-img_storytelling .card-box-img__3 {
+  -webkit-animation: hand infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: hand infinite cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_storytelling .card-box-img__2 {
+  -webkit-animation: head infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: head infinite cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_speedreading .card-box-img__1 {
+  -webkit-animation: scale infinite ease-in-out;
+  animation: scale infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_speedreading .card-box-img__2 {
+  -webkit-animation: rotate infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: rotate infinite cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_speedreading .card-box-img__3 {
+  -webkit-animation: floatY infinite ease-in-out;
+  animation: floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_mnemonics .card-box-img__7 {
+  -webkit-animation: mnemonicsFloat infinite ease;
+  animation: mnemonicsFloat infinite ease;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_mnemonics .card-box-img__2 {
+  -webkit-animation: mnemonicsShow infinite ease;
+  animation: mnemonicsShow infinite ease;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_mnemonics .card-box-img__1 {
+  -webkit-animation: scale infinite ease;
+  animation: scale infinite ease;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_relationship-building .card-box-img__1 {
+  -webkit-animation: relationship-building-rotate infinite linear;
+  animation: relationship-building-rotate infinite linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: 50% 58%;
+  transform-origin: 50% 58%;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_relationship-building .card-box-img__2 {
+  -webkit-animation: floatY infinite ease-in-out;
+  animation: floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_psychoregulation .card-box-img__1 {
+  -webkit-animation: floatY infinite ease-in-out;
+  animation: floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_psychoregulation .card-box-img__2 {
+  -webkit-animation: psychoregulation-right infinite ease-in-out;
+  animation: psychoregulation-right infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_psychoregulation .card-box-img__3 {
+  -webkit-animation: psychoregulation-left infinite ease-in-out;
+  animation: psychoregulation-left infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_russian-language .card-box-img__1 {
+  -webkit-animation: russian-language-rotate infinite linear;
+  animation: russian-language-rotate infinite linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_russian-language .card-box-img__2 {
+  -webkit-animation: floatY infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: floatY infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: 40% 50%;
+  transform-origin: 40% 50%;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_profiling .card-box-img__2,
+.card-box-img_start.card-box-img_profiling .card-box-img__3 {
+  -webkit-animation: profiling-floatY infinite
+    cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: profiling-floatY infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: 40% 50%;
+  transform-origin: 40% 50%;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_profiling .card-box-img__4 {
+  -webkit-animation: profiling-data infinite linear;
+  animation: profiling-data infinite linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_time-management .card-box-img__1 {
+  -webkit-animation: time-management-rotate infinite ease-in-out;
+  animation: time-management-rotate infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_time-management .card-box-img__2 {
+  -webkit-animation: time-management-rotate infinite ease-in-out;
+  animation: time-management-rotate infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_time-management .card-box-img__4 {
+  -webkit-animation: floatY infinite ease-in-out;
+  animation: floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_continuing-education .card-box-img__2 {
+  -webkit-animation: continuing-education-floatY infinite ease-in-out;
+  animation: continuing-education-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_continuing-education .card-box-img__3 {
+  -webkit-animation: scale infinite ease-in-out;
+  animation: scale infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_continuing-education .card-box-img__4 {
+  -webkit-animation: time-management-rotate infinite ease-in-out;
+  animation: time-management-rotate infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_self-knowledge .card-box-img__1 {
+  -webkit-animation: self-knowledge-rotate infinite ease-in-out;
+  animation: self-knowledge-rotate infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_self-knowledge .card-box-img__2 {
+  -webkit-animation: self-knowledge-rotate infinite
+    cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation: self-knowledge-rotate infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_self-knowledge .card-box-img__4 {
+  -webkit-animation: self-knowledge-floatY infinite ease-in-out;
+  animation: self-knowledge-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_self-knowledge .card-box-img__5 {
+  -webkit-animation: self-knowledge-floatY infinite ease-in-out;
+  animation: self-knowledge-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_modern-rhetoric .card-box-img__1 {
+  -webkit-animation: self-knowledge-floatY infinite linear;
+  animation: self-knowledge-floatY infinite linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_modern-rhetoric .card-box-img__3,
+.card-box-img_start.card-box-img_modern-rhetoric .card-box-img__4 {
+  -webkit-animation: modern-rhetoric-chat infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: modern-rhetoric-chat infinite cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_cognitive-science .card-box-img__1 {
+  -webkit-animation: scale infinite ease-in-out;
+  animation: scale infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_cognitive-science .card-box-img__3,
+.card-box-img_start.card-box-img_cognitive-science .card-box-img__4 {
+  -webkit-animation: self-knowledge-floatY infinite ease-in-out;
+  animation: self-knowledge-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_cognitive-science .card-box-img__5 {
+  -webkit-animation: floatY infinite ease-in-out;
+  animation: floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_communication-techniques .card-box-img__1 {
+  -webkit-animation: floatY infinite ease-in-out;
+  animation: floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_communication-techniques .card-box-img__2 {
+  -webkit-animation: self-knowledge-floatY infinite ease-in-out;
+  animation: self-knowledge-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_communication-techniques .card-box-img__3 {
+  -webkit-animation: communication-techniques infinite ease-in-out;
+  animation: communication-techniques infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_language-learning-techniques .card-box-img__1 {
+  -webkit-animation: russian-language-rotate infinite linear;
+  animation: russian-language-rotate infinite linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_language-learning-techniques .card-box-img__2 {
+  -webkit-animation: floatY infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: floatY infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: 40% 50%;
+  transform-origin: 40% 50%;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_health .card-box-img__1 {
+  -webkit-animation: continuing-education-floatY infinite ease-in-out;
+  animation: continuing-education-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_health .card-box-img__3 {
+  display: none;
+}
+
+.card-box-img_start.card-box-img_health .card-box-img__4 {
+  display: block;
+}
+
+.card-box-img_start.card-box-img_children .card-box-img__1 {
+  -webkit-animation: floatY infinite ease-in-out;
+  animation: floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_children .card-box-img__2 {
+  display: none;
+}
+
+.card-box-img_start.card-box-img_children .card-box-img__3 {
+  display: block;
+}
+
+.card-box-img_start.card-box-img_business .card-box-img__2 {
+  -webkit-animation: time-management-rotate infinite ease-in-out;
+  animation: time-management-rotate infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_business .card-box-img__3 {
+  -webkit-animation: continuing-education-floatY infinite ease-in-out;
+  animation: continuing-education-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_neuroscience .card-box-img__1 {
+  -webkit-animation: scale infinite ease-in-out;
+  animation: scale infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_neuroscience .card-box-img__2 {
+  -webkit-animation: self-knowledge-floatY infinite ease-in-out;
+  animation: self-knowledge-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_goals .card-box-img__1 {
+  -webkit-animation: continuing-education-floatY infinite ease-in-out;
+  animation: continuing-education-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_goals .card-box-img__3 {
+  -webkit-animation: modern-rhetoric-chat infinite
+    cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  animation: modern-rhetoric-chat infinite cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3.2s;
+  animation-duration: 3.2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_critical-thinking .card-box-img__1 {
+  -webkit-animation: continuing-education-floatY infinite ease-in-out;
+  animation: continuing-education-floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_critical-thinking .card-box-img__3 {
+  -webkit-animation: modern-rhetoric-chat infinite
+    cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  animation: modern-rhetoric-chat infinite cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3.2s;
+  animation-duration: 3.2s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_critical-thinking .card-box-img__4 {
+  -webkit-animation: modern-rhetoric-chat infinite
+    cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  animation: modern-rhetoric-chat infinite cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4.4s;
+  animation-duration: 4.4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_critical-thinking .card-box-img__2 {
+  -webkit-animation: modern-rhetoric-chat infinite
+    cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  animation: modern-rhetoric-chat infinite cubic-bezier(0.06, 0.96, 0.65, 1.29);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2.4s;
+  animation-duration: 2.4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_self-psychologist .card-box-img__1 {
+  -webkit-animation: floatY infinite ease-in-out;
+  animation: floatY infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box-img_start.card-box-img_self-psychologist .card-box-img__2 {
+  -webkit-animation: psychoregulation-right infinite ease-in-out;
+  animation: psychoregulation-right infinite ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+/* update */
+.card-box:hover .card-box-img_emotional-intellect .card-box-img__1,
+.card-box-img_start.card-box-img_emotional-intellect .card-box-img__1 {
+  -webkit-animation: chat infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: chat infinite cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+  -webkit-animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.card-box:hover .card-box-img_emotional-intellect .card-box-img__2,
+.card-box-img_start.card-box-img_emotional-intellect .card-box-img__2 {
+  -webkit-animation: chat infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: chat infinite cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_emotional-intellect .card-box-img__3,
+.card-box-img_start.card-box-img_emotional-intellect .card-box-img__3 {
+  -webkit-animation: chat infinite cubic-bezier(0.4, 0, 0.4, 1);
+  animation: chat infinite cubic-bezier(0.4, 0, 0.4, 1);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.card-box:hover .card-box-img_emotional-intellect .card-box-img__4,
+.card-box-img_start.card-box-img_emotional-intellect .card-box-img__4 {
+  -webkit-animation: head infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: head infinite cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}

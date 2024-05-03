@@ -1,0 +1,24 @@
+/* ubuntu-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/ubuntu/ubuntu-v20-latin_cyrillic-regular.woff2') format('woff2')
+}
+/* ubuntu-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/ubuntu/ubuntu-v20-latin_cyrillic-500.woff2') format('woff2')
+}
+/* ubuntu-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/ubuntu/ubuntu-v20-latin_cyrillic-700.woff2') format('woff2')
+}
